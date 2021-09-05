@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	widows: 100%;
+	height: 100vh;
+	background: rgba(255, 153, 102, .9);
+	font-family: LEMON MILK;
+	overflow: hidden;
+}
+body a{
+	text-decoration: none;
+}
+header{
+	width: 90%;
+	margin: auto;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul{
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+
+}
+a{
+	padding: 10px;
+	display: flex;
+	font-size: 16px;
+	color: #000;
+}
+
+nav > a{
+	font-size: 20px;
+}
+
+/* container */
+.container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 15% 85%;
+	height: 100%;
+}
+.sidebar{
+	display: grid;
+	align-items: flex-end;
+	padding: 16px;
+}
+.sidebar a {
+	writing-mode: vertical-rl;
+	padding: 13px 0px;
+	font-size: 15px;
+	font-weight: 370;
+}
+.line span {
+	display: inline-block;
+	width: 4px;
+	height: 200px;
+	background: #000;
+}
+.line span:nth-child(2) {
+	height: 178px;
+}
+.line span:nth-child(3) {
+	height: 155px;
+}
+.center {
+	position: relative;
+	padding-top: 40px;
+}
+h1 {
+	position: absolute;
+	left: 45%;
+	z-index: 9999;
+	font-size: 184px;
+	width: 100%;
+	top: 22%;
+	text-align: center;
+	transform: translate(-50%,-50%);
+	color: white;
+	font-family:NewYork;
+	
+	text-shadow: 1px -2px 2px rgba(0,0,0,1),
+	             1px -2px 5px rgba(0,0,0,1),
+	             1px -2px 4px rgba(0,0,0,1),
+	             1px -2px 5px rgba(0,0,0,1),
+	             1px 4px 4px rgba(0,0,0,1),
+	             1px -2px 4px rgba(0,0,0,1),
+	             1px -2px 4px rgba(0,0,0,1),
+	             1px -2px 4px rgba(0,0,0,1),
+	             1px -2px 4px rgba(0,0,0,1);
+
+}
+.img{
+	display: flex;
+	align-items: flex-end;
+}
+.img img{
+	width: 350px;
+	height: 500px;
+	object-fit: cover;
+	box-shadow: 0px 2px 5px 5px #000000;
+
+}
+.img img:first-child,
+.img img:last-child{
+	width: 300px;
+	height: 390px;
+	transform: rotate(-25deg) translate(50px,10px);
+	position: relative;
+	z-index: -1;
+}
+.img img:last-child{
+	width: 300px;
+	height: 390px;
+	transform: rotate(25deg) translate(-50px,10px);
+
+}
